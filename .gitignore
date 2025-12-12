@@ -3,3 +3,19 @@ __pycache__/
 .DS_Store
 .vscode/
 *.pyc
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Mac
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit cache
+.streamlit/
+
+# SHAP / matplotlib temp files
+*.png
