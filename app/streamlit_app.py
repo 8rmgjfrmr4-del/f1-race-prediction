@@ -12,6 +12,14 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = PROJECT_ROOT / "data" / "f1_multi_season_engineered.csv"
 MODEL_PATH = PROJECT_ROOT / "model" / "f1_podium_predictor_multi_season.pkl"
 
+if not DATA_PATH.exists():
+    st.error(f"Missing data file: {DATA_PATH}")
+    st.stop()
+
+if not MODEL_PATH.exists():
+    st.error(f"Missing model file: {MODEL_PATH}")
+    st.stop()
+    
 @st.cache_data
 def load_data():
     df = pd.read_csv(DATA_PATH)
