@@ -2,6 +2,24 @@
 
 End-to-end machine learning project that predicts the probability of an F1 driver finishing on the **podium (Top 3)** for a selected **race weekend**. Includes a **Streamlit app** and **SHAP-based local explanations** so you can see *why* the model made a prediction.
 
+## Live App
+## Demo
+
+![F1 Podium Predictor Demo](assets/demo.gif)
+
+Try the model live on Streamlit Community Cloud:
+
+👉 **https://f1-race-prediction-a3kmchch5k6desyxrzhbjs.streamlit.app/**
+
+Use the sidebar to select:
+
+- **Season**
+- **Round**
+- **Driver**
+- (Optional) grid position for “what-if” scenarios
+
+Then click **Predict podium probability** to see the model output and SHAP explanations.
+
 ## What this project does
 
 - Pulls historical Formula 1 race results (2021–2023) using an Ergast-compatible API
